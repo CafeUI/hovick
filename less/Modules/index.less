@@ -60,7 +60,8 @@
      margin-bottom: 0px;   
 }
 .container-fluid{
-     padding: 0;   
+     padding: 0;  
+    overflow-x: hidden;
 }
 #myCarousel{
      .item{
@@ -94,6 +95,7 @@
     h1{
         font-weight: 900;
         font-size:100px;
+        text-shadow: 7px 4px 2px rgba(68, 38, 15, 0.87);
     }
     h4{
          font-size: 40px;   
@@ -132,6 +134,7 @@ hr.about { padding: 0; border: none; border-top: medium solid #bebebe; color: #b
     height: 666px;
     height: 100vh;
     width: 100%;
+    background-position: center center;
 }
 #contact-header{
      font-size: 40px;
@@ -152,6 +155,9 @@ hr.about { padding: 0; border: none; border-top: medium solid #bebebe; color: #b
     font-size: 20px;
     text-align: center;
     font-weight: 400;
+    h2{
+        
+    }
 }
 #about-us{
      margin-bottom: 50px;
@@ -185,4 +191,23 @@ hr.about { padding: 0; border: none; border-top: medium solid #bebebe; color: #b
     }
     -webkit-transition: 0.5s; /* Safari */
     transition: 0.5s;
+}
+.navbar-toggle{
+    &:focus{
+     background-color: @blue;
+    }
+    &:hover{
+        background-color: @blue;
+    }
+}
+
+@media (max-width: 768px){ 
+    #address{
+        font-size: 12px;
+        h2{
+            font-size:14px;
+
+
+        }
+    }
 }
